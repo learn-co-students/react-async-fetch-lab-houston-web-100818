@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import Button from './Button'
 
 class ExampleComponent extends Component {
 
   render() {
     return (
       <strong>
-        Example!
+        {this.props.people.map((person, index) => {
+          return <Button key={index} person={person} />;
+        })}
       </strong>
     )
   }
