@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-class ExampleComponent extends Component {
+class Button extends Component {
 
   render() {
     return (
       <button onClick={this.handleClick}>
-        I am a button
+        I am {this.props.person.name}'s button
       </button>
     )
   }
@@ -16,4 +16,4 @@ class ExampleComponent extends Component {
 
 }
 
-export default ExampleComponent;
+export default Button;

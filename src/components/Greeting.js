@@ -5,7 +5,7 @@ class Greeting extends Component {
   render() {
     return (
       <div className="Greeting">
-        Hello!
+        Here are all the people in space!
       </div>
     );
   }
